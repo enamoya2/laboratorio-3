@@ -116,7 +116,7 @@ if(validatePassword($password) == false){
   echo "Error";
   exit;
 }
-$enc_pass = sha1(md5($password));
+$enc_pass = sha1($password);
 $path_img = insertImage();
 if($path_img != ""){
 
